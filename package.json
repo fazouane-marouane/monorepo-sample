@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "lerna --stream run test"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "babel-preset-react-app": "^7.0.2",
+    "lerna": "^2.9.1"
+  },
+  "installConfig": {
+    "pnp": true
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
