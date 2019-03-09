@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "test": "lerna --stream run test"
+    "build": "yarn lerna run build --stream",
+    "test": "yarn lerna run test --stream"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",

@@ -90,11 +90,151 @@ function blacklistCheck(locator) {
 }
 
 let packageInformationStores = new Map([
+  ["build-tools", new Map([
+    ["0.0.0", {
+      packageLocation: path.resolve(__dirname, "./packages/build-tools/"),
+      packageDependencies: new Map([
+        ["cross-spawn", "6.0.5"],
+        ["mkdirp", "0.5.1"],
+        ["uuid", "3.3.2"],
+      ]),
+    }],
+  ])],
+  ["cross-spawn", new Map([
+    ["6.0.5", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-cross-spawn-6.0.5-4a5ec7c64dfae22c3a14124dbacdee846d80cbc4/node_modules/cross-spawn/"),
+      packageDependencies: new Map([
+        ["nice-try", "1.0.5"],
+        ["path-key", "2.0.1"],
+        ["semver", "5.6.0"],
+        ["shebang-command", "1.2.0"],
+        ["which", "1.3.1"],
+        ["cross-spawn", "6.0.5"],
+      ]),
+    }],
+    ["5.1.0", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-cross-spawn-5.1.0-e8bd0efee58fcff6f8f94510a0a554bbfa235449/node_modules/cross-spawn/"),
+      packageDependencies: new Map([
+        ["lru-cache", "4.1.5"],
+        ["shebang-command", "1.2.0"],
+        ["which", "1.3.1"],
+        ["cross-spawn", "5.1.0"],
+      ]),
+    }],
+  ])],
+  ["nice-try", new Map([
+    ["1.0.5", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-nice-try-1.0.5-a3378a7696ce7d223e88fc9b764bd7ef1089e366/node_modules/nice-try/"),
+      packageDependencies: new Map([
+        ["nice-try", "1.0.5"],
+      ]),
+    }],
+  ])],
+  ["path-key", new Map([
+    ["2.0.1", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-path-key-2.0.1-411cadb574c5a140d3a4b1910d40d80cc9f40b40/node_modules/path-key/"),
+      packageDependencies: new Map([
+        ["path-key", "2.0.1"],
+      ]),
+    }],
+  ])],
+  ["semver", new Map([
+    ["5.6.0", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-semver-5.6.0-7e74256fbaa49c75aa7c7a205cc22799cac80004/node_modules/semver/"),
+      packageDependencies: new Map([
+        ["semver", "5.6.0"],
+      ]),
+    }],
+  ])],
+  ["shebang-command", new Map([
+    ["1.2.0", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-shebang-command-1.2.0-44aac65b695b03398968c39f363fee5deafdf1ea/node_modules/shebang-command/"),
+      packageDependencies: new Map([
+        ["shebang-regex", "1.0.0"],
+        ["shebang-command", "1.2.0"],
+      ]),
+    }],
+  ])],
+  ["shebang-regex", new Map([
+    ["1.0.0", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-shebang-regex-1.0.0-da42f49740c0b42db2ca9728571cb190c98efea3/node_modules/shebang-regex/"),
+      packageDependencies: new Map([
+        ["shebang-regex", "1.0.0"],
+      ]),
+    }],
+  ])],
+  ["which", new Map([
+    ["1.3.1", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-which-1.3.1-a45043d54f5805316da8d62f9f50918d3da70b0a/node_modules/which/"),
+      packageDependencies: new Map([
+        ["isexe", "2.0.0"],
+        ["which", "1.3.1"],
+      ]),
+    }],
+  ])],
+  ["isexe", new Map([
+    ["2.0.0", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-isexe-2.0.0-e8fbf374dc556ff8947a10dcb0572d633f2cfa10/node_modules/isexe/"),
+      packageDependencies: new Map([
+        ["isexe", "2.0.0"],
+      ]),
+    }],
+  ])],
+  ["mkdirp", new Map([
+    ["0.5.1", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-mkdirp-0.5.1-30057438eac6cf7f8c4767f38648d6697d75c903/node_modules/mkdirp/"),
+      packageDependencies: new Map([
+        ["minimist", "0.0.8"],
+        ["mkdirp", "0.5.1"],
+      ]),
+    }],
+  ])],
+  ["minimist", new Map([
+    ["0.0.8", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-0.0.8-857fcabfc3397d2625b8228262e86aa7a011b05d/node_modules/minimist/"),
+      packageDependencies: new Map([
+        ["minimist", "0.0.8"],
+      ]),
+    }],
+    ["1.2.0", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-1.2.0-a35008b20f41383eec1fb914f4cd5df79a264284/node_modules/minimist/"),
+      packageDependencies: new Map([
+        ["minimist", "1.2.0"],
+      ]),
+    }],
+    ["0.0.10", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-0.0.10-de3f98543dbf96082be48ad1a0c7cda836301dcf/node_modules/minimist/"),
+      packageDependencies: new Map([
+        ["minimist", "0.0.10"],
+      ]),
+    }],
+    ["0.1.0", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-0.1.0-99df657a52574c21c9057497df742790b2b4c0de/node_modules/minimist/"),
+      packageDependencies: new Map([
+        ["minimist", "0.1.0"],
+      ]),
+    }],
+  ])],
+  ["uuid", new Map([
+    ["3.3.2", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-uuid-3.3.2-1b4af4955eb3077c501c23872fc6513811587131/node_modules/uuid/"),
+      packageDependencies: new Map([
+        ["uuid", "3.3.2"],
+      ]),
+    }],
+    ["2.0.3", {
+      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-uuid-2.0.3-67e2e863797215530dff318e5bf9dcebfd47b21a/node_modules/uuid/"),
+      packageDependencies: new Map([
+        ["uuid", "2.0.3"],
+      ]),
+    }],
+  ])],
   ["getter", new Map([
     ["0.0.0", {
       packageLocation: path.resolve(__dirname, "./packages/getter/"),
       packageDependencies: new Map([
         ["is-array", "0.0.0"],
+        ["build-tools", "0.0.0"],
         ["babel-jest", "pnp:bba4ec7f34281516c68726c017d5c4ea56758a3e"],
         ["jest", "24.3.1"],
         ["jest-pnp-resolver", "1.2.0"],
@@ -531,32 +671,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["minimist", new Map([
-    ["1.2.0", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-1.2.0-a35008b20f41383eec1fb914f4cd5df79a264284/node_modules/minimist/"),
-      packageDependencies: new Map([
-        ["minimist", "1.2.0"],
-      ]),
-    }],
-    ["0.0.8", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-0.0.8-857fcabfc3397d2625b8228262e86aa7a011b05d/node_modules/minimist/"),
-      packageDependencies: new Map([
-        ["minimist", "0.0.8"],
-      ]),
-    }],
-    ["0.0.10", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-0.0.10-de3f98543dbf96082be48ad1a0c7cda836301dcf/node_modules/minimist/"),
-      packageDependencies: new Map([
-        ["minimist", "0.0.10"],
-      ]),
-    }],
-    ["0.1.0", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-minimist-0.1.0-99df657a52574c21c9057497df742790b2b4c0de/node_modules/minimist/"),
-      packageDependencies: new Map([
-        ["minimist", "0.1.0"],
-      ]),
-    }],
-  ])],
   ["resolve", new Map([
     ["1.10.0", {
       packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-resolve-1.10.0-3bdaaeaf45cc07f375656dfd2e54ed0810b101ba/node_modules/resolve/"),
@@ -577,14 +691,6 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-path-parse-1.0.6-d62dbb5679405d72c4737ec58600e9ddcf06d24c/node_modules/path-parse/"),
       packageDependencies: new Map([
         ["path-parse", "1.0.6"],
-      ]),
-    }],
-  ])],
-  ["semver", new Map([
-    ["5.6.0", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-semver-5.6.0-7e74256fbaa49c75aa7c7a205cc22799cac80004/node_modules/semver/"),
-      packageDependencies: new Map([
-        ["semver", "5.6.0"],
       ]),
     }],
   ])],
@@ -2102,15 +2208,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["mkdirp", new Map([
-    ["0.5.1", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-mkdirp-0.5.1-30057438eac6cf7f8c4767f38648d6697d75c903/node_modules/mkdirp/"),
-      packageDependencies: new Map([
-        ["minimist", "0.0.8"],
-        ["mkdirp", "0.5.1"],
-      ]),
-    }],
-  ])],
   ["jest-worker", new Map([
     ["24.3.1", {
       packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-jest-worker-24.3.1-c1759dd2b1d5541b09a2e5e1bc3288de6c9d8632/node_modules/jest-worker/"),
@@ -2304,78 +2401,6 @@ let packageInformationStores = new Map([
         ["signal-exit", "3.0.2"],
         ["strip-eof", "1.0.0"],
         ["execa", "0.7.0"],
-      ]),
-    }],
-  ])],
-  ["cross-spawn", new Map([
-    ["6.0.5", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-cross-spawn-6.0.5-4a5ec7c64dfae22c3a14124dbacdee846d80cbc4/node_modules/cross-spawn/"),
-      packageDependencies: new Map([
-        ["nice-try", "1.0.5"],
-        ["path-key", "2.0.1"],
-        ["semver", "5.6.0"],
-        ["shebang-command", "1.2.0"],
-        ["which", "1.3.1"],
-        ["cross-spawn", "6.0.5"],
-      ]),
-    }],
-    ["5.1.0", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-cross-spawn-5.1.0-e8bd0efee58fcff6f8f94510a0a554bbfa235449/node_modules/cross-spawn/"),
-      packageDependencies: new Map([
-        ["lru-cache", "4.1.5"],
-        ["shebang-command", "1.2.0"],
-        ["which", "1.3.1"],
-        ["cross-spawn", "5.1.0"],
-      ]),
-    }],
-  ])],
-  ["nice-try", new Map([
-    ["1.0.5", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-nice-try-1.0.5-a3378a7696ce7d223e88fc9b764bd7ef1089e366/node_modules/nice-try/"),
-      packageDependencies: new Map([
-        ["nice-try", "1.0.5"],
-      ]),
-    }],
-  ])],
-  ["path-key", new Map([
-    ["2.0.1", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-path-key-2.0.1-411cadb574c5a140d3a4b1910d40d80cc9f40b40/node_modules/path-key/"),
-      packageDependencies: new Map([
-        ["path-key", "2.0.1"],
-      ]),
-    }],
-  ])],
-  ["shebang-command", new Map([
-    ["1.2.0", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-shebang-command-1.2.0-44aac65b695b03398968c39f363fee5deafdf1ea/node_modules/shebang-command/"),
-      packageDependencies: new Map([
-        ["shebang-regex", "1.0.0"],
-        ["shebang-command", "1.2.0"],
-      ]),
-    }],
-  ])],
-  ["shebang-regex", new Map([
-    ["1.0.0", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-shebang-regex-1.0.0-da42f49740c0b42db2ca9728571cb190c98efea3/node_modules/shebang-regex/"),
-      packageDependencies: new Map([
-        ["shebang-regex", "1.0.0"],
-      ]),
-    }],
-  ])],
-  ["which", new Map([
-    ["1.3.1", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-which-1.3.1-a45043d54f5805316da8d62f9f50918d3da70b0a/node_modules/which/"),
-      packageDependencies: new Map([
-        ["isexe", "2.0.0"],
-        ["which", "1.3.1"],
-      ]),
-    }],
-  ])],
-  ["isexe", new Map([
-    ["2.0.0", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-isexe-2.0.0-e8fbf374dc556ff8947a10dcb0572d633f2cfa10/node_modules/isexe/"),
-      packageDependencies: new Map([
-        ["isexe", "2.0.0"],
       ]),
     }],
   ])],
@@ -4088,20 +4113,6 @@ let packageInformationStores = new Map([
       packageDependencies: new Map([
         ["safe-buffer", "5.1.2"],
         ["tunnel-agent", "0.6.0"],
-      ]),
-    }],
-  ])],
-  ["uuid", new Map([
-    ["3.3.2", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-uuid-3.3.2-1b4af4955eb3077c501c23872fc6513811587131/node_modules/uuid/"),
-      packageDependencies: new Map([
-        ["uuid", "3.3.2"],
-      ]),
-    }],
-    ["2.0.3", {
-      packageLocation: path.resolve(__dirname, "../../yarn-cache/v4/npm-uuid-2.0.3-67e2e863797215530dff318e5bf9dcebfd47b21a/node_modules/uuid/"),
-      packageDependencies: new Map([
-        ["uuid", "2.0.3"],
       ]),
     }],
   ])],
@@ -7789,6 +7800,7 @@ let packageInformationStores = new Map([
         ["@babel/core", "7.3.4"],
         ["babel-preset-react-app", "7.0.2"],
         ["lerna", "2.11.0"],
+        ["build-tools", "0.0.0"],
         ["getter", "0.0.0"],
         ["is-array", "0.0.0"],
       ]),
@@ -7831,6 +7843,23 @@ let locatorsByLocations = new Map([
   ["./.pnp/externals/pnp-268f1f89cde55a6c855b14989f9f7baae25eb908/node_modules/@babel/plugin-syntax-jsx/", blacklistedLocator],
   ["./.pnp/externals/pnp-4f7cc2b776e4951e32a2a4cbf33e9444fb4fb6f9/node_modules/@babel/plugin-syntax-jsx/", blacklistedLocator],
   ["./.pnp/externals/pnp-341dbce97b427a8198bbb56ff7efbfb1f99de128/node_modules/@babel/plugin-syntax-jsx/", blacklistedLocator],
+  ["./packages/build-tools/", {"name":"build-tools","reference":"0.0.0"}],
+  ["../../yarn-cache/v4/npm-cross-spawn-6.0.5-4a5ec7c64dfae22c3a14124dbacdee846d80cbc4/node_modules/cross-spawn/", {"name":"cross-spawn","reference":"6.0.5"}],
+  ["../../yarn-cache/v4/npm-cross-spawn-5.1.0-e8bd0efee58fcff6f8f94510a0a554bbfa235449/node_modules/cross-spawn/", {"name":"cross-spawn","reference":"5.1.0"}],
+  ["../../yarn-cache/v4/npm-nice-try-1.0.5-a3378a7696ce7d223e88fc9b764bd7ef1089e366/node_modules/nice-try/", {"name":"nice-try","reference":"1.0.5"}],
+  ["../../yarn-cache/v4/npm-path-key-2.0.1-411cadb574c5a140d3a4b1910d40d80cc9f40b40/node_modules/path-key/", {"name":"path-key","reference":"2.0.1"}],
+  ["../../yarn-cache/v4/npm-semver-5.6.0-7e74256fbaa49c75aa7c7a205cc22799cac80004/node_modules/semver/", {"name":"semver","reference":"5.6.0"}],
+  ["../../yarn-cache/v4/npm-shebang-command-1.2.0-44aac65b695b03398968c39f363fee5deafdf1ea/node_modules/shebang-command/", {"name":"shebang-command","reference":"1.2.0"}],
+  ["../../yarn-cache/v4/npm-shebang-regex-1.0.0-da42f49740c0b42db2ca9728571cb190c98efea3/node_modules/shebang-regex/", {"name":"shebang-regex","reference":"1.0.0"}],
+  ["../../yarn-cache/v4/npm-which-1.3.1-a45043d54f5805316da8d62f9f50918d3da70b0a/node_modules/which/", {"name":"which","reference":"1.3.1"}],
+  ["../../yarn-cache/v4/npm-isexe-2.0.0-e8fbf374dc556ff8947a10dcb0572d633f2cfa10/node_modules/isexe/", {"name":"isexe","reference":"2.0.0"}],
+  ["../../yarn-cache/v4/npm-mkdirp-0.5.1-30057438eac6cf7f8c4767f38648d6697d75c903/node_modules/mkdirp/", {"name":"mkdirp","reference":"0.5.1"}],
+  ["../../yarn-cache/v4/npm-minimist-0.0.8-857fcabfc3397d2625b8228262e86aa7a011b05d/node_modules/minimist/", {"name":"minimist","reference":"0.0.8"}],
+  ["../../yarn-cache/v4/npm-minimist-1.2.0-a35008b20f41383eec1fb914f4cd5df79a264284/node_modules/minimist/", {"name":"minimist","reference":"1.2.0"}],
+  ["../../yarn-cache/v4/npm-minimist-0.0.10-de3f98543dbf96082be48ad1a0c7cda836301dcf/node_modules/minimist/", {"name":"minimist","reference":"0.0.10"}],
+  ["../../yarn-cache/v4/npm-minimist-0.1.0-99df657a52574c21c9057497df742790b2b4c0de/node_modules/minimist/", {"name":"minimist","reference":"0.1.0"}],
+  ["../../yarn-cache/v4/npm-uuid-3.3.2-1b4af4955eb3077c501c23872fc6513811587131/node_modules/uuid/", {"name":"uuid","reference":"3.3.2"}],
+  ["../../yarn-cache/v4/npm-uuid-2.0.3-67e2e863797215530dff318e5bf9dcebfd47b21a/node_modules/uuid/", {"name":"uuid","reference":"2.0.3"}],
   ["./packages/getter/", {"name":"getter","reference":"0.0.0"}],
   ["./packages/is-array/", {"name":"is-array","reference":"0.0.0"}],
   ["./.pnp/externals/pnp-bba4ec7f34281516c68726c017d5c4ea56758a3e/node_modules/babel-jest/", {"name":"babel-jest","reference":"pnp:bba4ec7f34281516c68726c017d5c4ea56758a3e"}],
@@ -7875,14 +7904,9 @@ let locatorsByLocations = new Map([
   ["../../yarn-cache/v4/npm-safe-buffer-5.1.2-991ec69d296e0313747d59bdfd2b745c35f8828d/node_modules/safe-buffer/", {"name":"safe-buffer","reference":"5.1.2"}],
   ["../../yarn-cache/v4/npm-json5-2.1.0-e7a0c62c48285c628d20a10b85c89bb807c32850/node_modules/json5/", {"name":"json5","reference":"2.1.0"}],
   ["../../yarn-cache/v4/npm-json5-1.0.1-779fb0018604fa854eacbf6252180d83543e3dbe/node_modules/json5/", {"name":"json5","reference":"1.0.1"}],
-  ["../../yarn-cache/v4/npm-minimist-1.2.0-a35008b20f41383eec1fb914f4cd5df79a264284/node_modules/minimist/", {"name":"minimist","reference":"1.2.0"}],
-  ["../../yarn-cache/v4/npm-minimist-0.0.8-857fcabfc3397d2625b8228262e86aa7a011b05d/node_modules/minimist/", {"name":"minimist","reference":"0.0.8"}],
-  ["../../yarn-cache/v4/npm-minimist-0.0.10-de3f98543dbf96082be48ad1a0c7cda836301dcf/node_modules/minimist/", {"name":"minimist","reference":"0.0.10"}],
-  ["../../yarn-cache/v4/npm-minimist-0.1.0-99df657a52574c21c9057497df742790b2b4c0de/node_modules/minimist/", {"name":"minimist","reference":"0.1.0"}],
   ["../../yarn-cache/v4/npm-resolve-1.10.0-3bdaaeaf45cc07f375656dfd2e54ed0810b101ba/node_modules/resolve/", {"name":"resolve","reference":"1.10.0"}],
   ["../../yarn-cache/v4/npm-resolve-1.1.7-203114d82ad2c5ed9e8e0411b3932875e889e97b/node_modules/resolve/", {"name":"resolve","reference":"1.1.7"}],
   ["../../yarn-cache/v4/npm-path-parse-1.0.6-d62dbb5679405d72c4737ec58600e9ddcf06d24c/node_modules/path-parse/", {"name":"path-parse","reference":"1.0.6"}],
-  ["../../yarn-cache/v4/npm-semver-5.6.0-7e74256fbaa49c75aa7c7a205cc22799cac80004/node_modules/semver/", {"name":"semver","reference":"5.6.0"}],
   ["../../yarn-cache/v4/npm-@jest-types-24.3.0-3f6e117e47248a9a6b5f1357ec645bd364f7ad23/node_modules/@jest/types/", {"name":"@jest/types","reference":"24.3.0"}],
   ["../../yarn-cache/v4/npm-@types-istanbul-lib-coverage-1.1.0-2cc2ca41051498382b43157c8227fea60363f94a/node_modules/@types/istanbul-lib-coverage/", {"name":"@types/istanbul-lib-coverage","reference":"1.1.0"}],
   ["../../yarn-cache/v4/npm-@types-yargs-12.0.9-693e76a52f61a2f1e7fb48c0eef167b95ea4ffd0/node_modules/@types/yargs/", {"name":"@types/yargs","reference":"12.0.9"}],
@@ -8045,7 +8069,6 @@ let locatorsByLocations = new Map([
   ["../../yarn-cache/v4/npm-is-ci-1.2.1-e3779c8ee17fccf428488f6e281187f2e632841c/node_modules/is-ci/", {"name":"is-ci","reference":"1.2.1"}],
   ["../../yarn-cache/v4/npm-ci-info-2.0.0-67a9e964be31a51e15e5010d58e6f12834002f46/node_modules/ci-info/", {"name":"ci-info","reference":"2.0.0"}],
   ["../../yarn-cache/v4/npm-ci-info-1.6.0-2ca20dbb9ceb32d4524a683303313f0304b1e497/node_modules/ci-info/", {"name":"ci-info","reference":"1.6.0"}],
-  ["../../yarn-cache/v4/npm-mkdirp-0.5.1-30057438eac6cf7f8c4767f38648d6697d75c903/node_modules/mkdirp/", {"name":"mkdirp","reference":"0.5.1"}],
   ["../../yarn-cache/v4/npm-jest-worker-24.3.1-c1759dd2b1d5541b09a2e5e1bc3288de6c9d8632/node_modules/jest-worker/", {"name":"jest-worker","reference":"24.3.1"}],
   ["../../yarn-cache/v4/npm-merge-stream-1.0.1-4041202d508a342ba00174008df0c251b8c135e1/node_modules/merge-stream/", {"name":"merge-stream","reference":"1.0.1"}],
   ["../../yarn-cache/v4/npm-readable-stream-2.3.6-b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf/node_modules/readable-stream/", {"name":"readable-stream","reference":"2.3.6"}],
@@ -8065,14 +8088,6 @@ let locatorsByLocations = new Map([
   ["../../yarn-cache/v4/npm-execa-1.0.0-c6236a5bb4df6d6f15e88e7f017798216749ddd8/node_modules/execa/", {"name":"execa","reference":"1.0.0"}],
   ["../../yarn-cache/v4/npm-execa-0.8.0-d8d76bbc1b55217ed190fd6dd49d3c774ecfc8da/node_modules/execa/", {"name":"execa","reference":"0.8.0"}],
   ["../../yarn-cache/v4/npm-execa-0.7.0-944becd34cc41ee32a63a9faf27ad5a65fc59777/node_modules/execa/", {"name":"execa","reference":"0.7.0"}],
-  ["../../yarn-cache/v4/npm-cross-spawn-6.0.5-4a5ec7c64dfae22c3a14124dbacdee846d80cbc4/node_modules/cross-spawn/", {"name":"cross-spawn","reference":"6.0.5"}],
-  ["../../yarn-cache/v4/npm-cross-spawn-5.1.0-e8bd0efee58fcff6f8f94510a0a554bbfa235449/node_modules/cross-spawn/", {"name":"cross-spawn","reference":"5.1.0"}],
-  ["../../yarn-cache/v4/npm-nice-try-1.0.5-a3378a7696ce7d223e88fc9b764bd7ef1089e366/node_modules/nice-try/", {"name":"nice-try","reference":"1.0.5"}],
-  ["../../yarn-cache/v4/npm-path-key-2.0.1-411cadb574c5a140d3a4b1910d40d80cc9f40b40/node_modules/path-key/", {"name":"path-key","reference":"2.0.1"}],
-  ["../../yarn-cache/v4/npm-shebang-command-1.2.0-44aac65b695b03398968c39f363fee5deafdf1ea/node_modules/shebang-command/", {"name":"shebang-command","reference":"1.2.0"}],
-  ["../../yarn-cache/v4/npm-shebang-regex-1.0.0-da42f49740c0b42db2ca9728571cb190c98efea3/node_modules/shebang-regex/", {"name":"shebang-regex","reference":"1.0.0"}],
-  ["../../yarn-cache/v4/npm-which-1.3.1-a45043d54f5805316da8d62f9f50918d3da70b0a/node_modules/which/", {"name":"which","reference":"1.3.1"}],
-  ["../../yarn-cache/v4/npm-isexe-2.0.0-e8fbf374dc556ff8947a10dcb0572d633f2cfa10/node_modules/isexe/", {"name":"isexe","reference":"2.0.0"}],
   ["../../yarn-cache/v4/npm-get-stream-4.1.0-c1b255575f3dc21d59bfc79cd3d2b46b1c3a54b5/node_modules/get-stream/", {"name":"get-stream","reference":"4.1.0"}],
   ["../../yarn-cache/v4/npm-get-stream-3.0.0-8e943d1358dc37555054ecbe2edb05aa174ede14/node_modules/get-stream/", {"name":"get-stream","reference":"3.0.0"}],
   ["../../yarn-cache/v4/npm-pump-3.0.0-b4a2116815bde2f4e1ea602354e8c75565107a64/node_modules/pump/", {"name":"pump","reference":"3.0.0"}],
@@ -8245,8 +8260,6 @@ let locatorsByLocations = new Map([
   ["../../yarn-cache/v4/npm-tough-cookie-2.5.0-cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2/node_modules/tough-cookie/", {"name":"tough-cookie","reference":"2.5.0"}],
   ["../../yarn-cache/v4/npm-psl-1.1.31-e9aa86d0101b5b105cbe93ac6b784cd547276184/node_modules/psl/", {"name":"psl","reference":"1.1.31"}],
   ["../../yarn-cache/v4/npm-tunnel-agent-0.6.0-27a5dea06b36b04a0a9966774b290868f0fc40fd/node_modules/tunnel-agent/", {"name":"tunnel-agent","reference":"0.6.0"}],
-  ["../../yarn-cache/v4/npm-uuid-3.3.2-1b4af4955eb3077c501c23872fc6513811587131/node_modules/uuid/", {"name":"uuid","reference":"3.3.2"}],
-  ["../../yarn-cache/v4/npm-uuid-2.0.3-67e2e863797215530dff318e5bf9dcebfd47b21a/node_modules/uuid/", {"name":"uuid","reference":"2.0.3"}],
   ["../../yarn-cache/v4/npm-request-promise-native-1.0.7-a49868a624bdea5069f1251d0a836e0d89aa2c59/node_modules/request-promise-native/", {"name":"request-promise-native","reference":"1.0.7"}],
   ["../../yarn-cache/v4/npm-request-promise-core-1.1.2-339f6aababcafdb31c799ff158700336301d3346/node_modules/request-promise-core/", {"name":"request-promise-core","reference":"1.1.2"}],
   ["../../yarn-cache/v4/npm-stealthy-require-1.1.1-35b09875b4ff49f26a777e509b3090a3226bf24b/node_modules/stealthy-require/", {"name":"stealthy-require","reference":"1.1.1"}],
@@ -8933,6 +8946,10 @@ exports.findPackageLocator = function findPackageLocator(location) {
 
   if (relativeLocation.length >= 86 && relativeLocation[85] === '/')
     if (match = locatorsByLocations.get(relativeLocation.substr(0, 86)))
+      return blacklistCheck(match);
+
+  if (relativeLocation.length >= 23 && relativeLocation[22] === '/')
+    if (match = locatorsByLocations.get(relativeLocation.substr(0, 23)))
       return blacklistCheck(match);
 
   if (relativeLocation.length >= 20 && relativeLocation[19] === '/')

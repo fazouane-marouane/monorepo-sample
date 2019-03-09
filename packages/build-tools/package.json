@@ -1,0 +1,15 @@
+{
+  "name": "build-tools",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "mkdirp": "^0.5.1",
+    "uuid": "^3.3.2"
+  },
+  "bin": {
+    "orchestrate": "./.bin/orchestrate",
+    "scream": "./.bin/scream"
+  }
+}
