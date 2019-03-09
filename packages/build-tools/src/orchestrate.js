@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const spawn = require("cross-spawn");
 const mkdirp = require("mkdirp");
 const uuidv4 = require("uuid/v4");
