@@ -1,0 +1,16 @@
+{
+  //eslint
+  "eslint.enable": true,
+  "eslint.nodePath": "./scripts",
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": ["./packages/**/src"],
+
+  //prettier
+  "prettier.eslintIntegration": true,
+  "files.autoSave": "off",
+  "editor.formatOnSave": true,
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false
+}
