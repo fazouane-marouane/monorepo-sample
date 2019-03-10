@@ -6,7 +6,7 @@
  */
 module.exports = {
   parser: "babel-eslint",
-  extends: ["airbnb" /*"react-app"*/],
+  extends: ["airbnb" /*, "react-app"*/],
   plugins: ["react", "import"],
   env: {
     browser: true,
@@ -15,6 +15,9 @@ module.exports = {
   settings: {
     "import/resolver": {
       [require.resolve("./scripts/eslint-resolver.js")]: {}
+    },
+    react: {
+      version: "16.8.4"
     }
   }
 };
