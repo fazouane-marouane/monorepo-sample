@@ -23967,6 +23967,10 @@
           "path": "../../../../yarn-cache/v4/npm-cross-spawn-6.0.5-4a5ec7c64dfae22c3a14124dbacdee846d80cbc4/node_modules/cross-spawn",
           "main": "index.js"
         },
+        "lodash": {
+          "path": "../../../../yarn-cache/v4/npm-lodash-4.17.11-b39ea6229ef607ecd89e2c8df12536891cac9b8d/node_modules/lodash",
+          "main": "lodash.js"
+        },
         "mkdirp": {
           "path": "../../../../yarn-cache/v4/npm-mkdirp-0.5.1-30057438eac6cf7f8c4767f38648d6697d75c903/node_modules/mkdirp",
           "main": "index.js"

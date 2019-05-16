@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "cross-spawn": "^6.0.5",
+    "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
     "uuid": "^3.3.2"
   },
