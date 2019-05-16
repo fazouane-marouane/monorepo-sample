@@ -3,10 +3,16 @@
   "scripts": {
     "postinstall": "is-pnp && build-pnm || true",
     "build": "yarn lerna run build --stream",
+    "build:storybook": "yarn lerna run build:storybook --stream",
     "test": "yarn lerna run test --stream"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
+    "@storybook/channels": "^5.0.11",
+    "airbnb-js-shims": "^2.2.0",
+    "emotion-theming": "^10.0.10",
     "babel-eslint": "10.0.1",
     "babel-preset-react-app": "^9.0.0",
     "build-pnm": "^0.1.0",
@@ -18,6 +24,7 @@
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-prettier": "^3.1.0",
     "estraverse": "^4.2.0",
+    "global": "^4.3.2",
     "is-pnp": "^1.0.2",
     "lerna": "^3.14.1",
     "react": "^16.8.6",
